@@ -11,6 +11,7 @@ import SwiftData
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var errorMessage: String = ""
     
     var body: some View {
         VStack {
@@ -26,7 +27,16 @@ struct LoginView: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
+            Text(errorMessage)
+                .foregroundColor(.red)
+            
             Button(action: {
+                // Validate the input fields
+                guard !username.isEmpty, !password.isEmpty else {
+                    errorMessage = "Please fill in all fields"
+                    return
+                }
+                
                 // Perform login action here
                 // You can authenticate the user with the provided username and password
                 // Example: authenticate(username: username, password: password)
@@ -35,13 +45,9 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
-                    .cornerRadius(10)
+                    .cornerRadius(5)
             }
-            .padding()
-            
-            Spacer()
         }
-        .padding()
     }
 }
 
