@@ -66,9 +66,6 @@
 		4D528CC22BC4B84F00A90338 /* CleaningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DB19A252BC4CF13001BDBC4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4DB19A352BC517CE001BDBC4 /* HomepageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageView.swift; path = CleaningApp/HomepageView.swift; sourceTree = "<group>"; };
-		4DB19A392BC532B3001BDBC4 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
-		4DB19A3D2BC5335C001BDBC4 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
-		4DB19A412BC541B7001BDBC4 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +99,6 @@
 		4D528C972BC4B84E00A90338 = {
 			isa = PBXGroup;
 			children = (
-				4DB19A412BC541B7001BDBC4 /* TaskView.swift */,
-				4DB19A3D2BC5335C001BDBC4 /* ScheduleView.swift */,
-				4DB19A392BC532B3001BDBC4 /* NavigationView.swift */,
 				4DB19A352BC517CE001BDBC4 /* HomepageView.swift */,
 				4D528CA22BC4B84E00A90338 /* CleaningApp */,
 				4D528CB52BC4B84F00A90338 /* CleaningAppTests */,
@@ -126,6 +120,7 @@
 		4D528CA22BC4B84E00A90338 /* CleaningApp */ = {
 			isa = PBXGroup;
 			children = (
+				4DB19A352BC517CE001BDBC4 /* HomepageView.swift */,
 				4D528CA32BC4B84E00A90338 /* CleaningApp.swift */,
 				4D528CA52BC4B84E00A90338 /* ContentView.swift */,
 				4D528CA72BC4B84E00A90338 /* Item.swift */,
