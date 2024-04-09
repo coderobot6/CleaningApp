@@ -13,29 +13,43 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        // NavigationSplitView {
+        //     List {
+        //         ForEach(items) { item in
+        //             NavigationLink {
+        //                 Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+        //             } label: {
+        //                 Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        //             }
+        //         }
+        //         .onDelete(perform: deleteItems)
+        //     }
+        //     .toolbar {
+        //         ToolbarItem(placement: .navigationBarTrailing) {
+        //             EditButton()
+        //         }
+        //         ToolbarItem {
+        //             Button(action: addItem) {
+        //                 Label("Add Item", systemImage: "plus")
+        //             }
+        //         }
+        //     }
+        // } detail: {
+        //     Text("Select an item")
+        // }
+        TabView {
+            HomepageView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            TaskView()
+                .tabItem {
+                    Label("Task", systemImage: "checkmark.circle")
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            ScheduleView()
+                .tabItem {
+                    Label("Schedule", systemImage: "calendar")
                 }
-            }
-        } detail: {
-            Text("Select an item")
         }
     }
 
