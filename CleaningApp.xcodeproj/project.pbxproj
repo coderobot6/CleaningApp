@@ -56,7 +56,7 @@
 		4D528CC02BC4B84F00A90338 /* CleaningAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningAppUITests.swift; sourceTree = "<group>"; };
 		4D528CC22BC4B84F00A90338 /* CleaningAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DB19A252BC4CF13001BDBC4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		4DB19A352BC517CE001BDBC4 /* HomepageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageView.swift; path = CleaningApp/HomepageView.swift; sourceTree = "<group>"; };
+		4DB19A352BC517CE001BDBC4 /* HomepageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,6 @@
 		4D528C972BC4B84E00A90338 = {
 			isa = PBXGroup;
 			children = (
-				4DB19A352BC517CE001BDBC4 /* HomepageView.swift */,
 				4D528CA22BC4B84E00A90338 /* CleaningApp */,
 				4D528CB52BC4B84F00A90338 /* CleaningAppTests */,
 				4D528CBF2BC4B84F00A90338 /* CleaningAppUITests */,
@@ -111,6 +110,7 @@
 		4D528CA22BC4B84E00A90338 /* CleaningApp */ = {
 			isa = PBXGroup;
 			children = (
+				4DB19A352BC517CE001BDBC4 /* HomepageView.swift */,
 				4D528CA32BC4B84E00A90338 /* CleaningApp.swift */,
 				4D528CA52BC4B84E00A90338 /* ContentView.swift */,
 				4D528CA72BC4B84E00A90338 /* Item.swift */,
