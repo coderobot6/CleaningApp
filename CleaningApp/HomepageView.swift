@@ -19,7 +19,7 @@ struct HomepageView: View {
                     .overlay(
                         Image("shower")
                             .resizable()
-                            .frame(width: 262 , height: 121)
+                            .frame(width: 262 , height: 120)
                             .aspectRatio(contentMode: .fit)
                     )
                     .onTapGesture {
