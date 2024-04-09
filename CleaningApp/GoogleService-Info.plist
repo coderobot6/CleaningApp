@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>150349887555-aeb103so5q82m6q0ags5edqud6hl87a4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.150349887555-aeb103so5q82m6q0ags5edqud6hl87a4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAd8_AQ96hdj7wC3tGmh-V-MZfjncDh-3c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>150349887555</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kaipersonal.CleaningApp</string>
+	<key>PROJECT_ID</key>
+	<string>cleaningapp-137bb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cleaningapp-137bb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:150349887555:ios:b0e8b14dc4861d2ecffcf6</string>
+</dict>
+</plist>
