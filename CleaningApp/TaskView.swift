@@ -1,10 +1,3 @@
-//
-//  TaskView.swift
-//  CleaningApp
-//
-//  Created by Triet Tran on 4/9/24.
-//
-
 import SwiftUI
 
 struct TaskView: View {

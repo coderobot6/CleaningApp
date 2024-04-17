@@ -1,10 +1,3 @@
-//
-//  Item.swift
-//  CleaningApp
-//
-//  Created by Triet Tran on 4/8/24.
-//
-
 import Foundation
 import SwiftData
 

@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  CleaningApp
-//
-//  Created by Triet Tran on 4/8/24.
-//
-
 import SwiftUI
 import SwiftData
 

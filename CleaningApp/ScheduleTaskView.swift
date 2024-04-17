@@ -1,10 +1,3 @@
-//
-//  ScheduleTaskView.swift
-//  CleaningApp
-//
-//  Created by Triet Tran on 4/16/24.
-//
-
 import SwiftUI
 
 struct AddTaskButton: View {
