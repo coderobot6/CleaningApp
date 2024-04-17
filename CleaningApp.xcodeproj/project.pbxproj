@@ -14,9 +14,6 @@
 		4D528CA62BC4B84E00A90338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D528CA52BC4B84E00A90338 /* ContentView.swift */; };
 		4D528CA82BC4B84E00A90338 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D528CA72BC4B84E00A90338 /* Item.swift */; };
 		4D528CAA2BC4B84F00A90338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D528CA92BC4B84F00A90338 /* Assets.xcassets */; };
-		4DB19A202BC4C6EF001BDBC4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB19A1F2BC4C6EF001BDBC4 /* FirebaseAnalytics */; };
-		4DB19A222BC4CCD9001BDBC4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB19A212BC4CCD9001BDBC4 /* FirebaseAnalyticsOnDeviceConversion */; };
-		4DB19A242BC4CCD9001BDBC4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4DB19A232BC4CCD9001BDBC4 /* FirebaseAnalyticsSwift */; };
 		4DB19A262BC4CF13001BDBC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB19A252BC4CF13001BDBC4 /* LoginView.swift */; };
 		4DB19A272BC4CF13001BDBC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB19A252BC4CF13001BDBC4 /* LoginView.swift */; };
 		4DB19A282BC4CF13001BDBC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB19A252BC4CF13001BDBC4 /* LoginView.swift */; };
@@ -71,9 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB19A242BC4CCD9001BDBC4 /* FirebaseAnalyticsSwift in Frameworks */,
-				4DB19A202BC4C6EF001BDBC4 /* FirebaseAnalytics in Frameworks */,
-				4DB19A222BC4CCD9001BDBC4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +140,6 @@
 			);
 			name = CleaningApp;
 			packageProductDependencies = (
-				4DB19A1F2BC4C6EF001BDBC4 /* FirebaseAnalytics */,
-				4DB19A212BC4CCD9001BDBC4 /* FirebaseAnalyticsOnDeviceConversion */,
-				4DB19A232BC4CCD9001BDBC4 /* FirebaseAnalyticsSwift */,
 			);
 			productName = CleaningApp;
 			productReference = 4D528CA02BC4B84E00A90338 /* CleaningApp.app */;
@@ -619,24 +610,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4DB19A1F2BC4C6EF001BDBC4 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4DB19A1E2BC4C5F4001BDBC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		4DB19A212BC4CCD9001BDBC4 /* FirebaseAnalyticsOnDeviceConversion */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4DB19A1E2BC4C5F4001BDBC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsOnDeviceConversion;
-		};
-		4DB19A232BC4CCD9001BDBC4 /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4DB19A1E2BC4C5F4001BDBC4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D528C982BC4B84E00A90338 /* Project object */;
 }
