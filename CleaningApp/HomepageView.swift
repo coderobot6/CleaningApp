@@ -19,7 +19,7 @@ struct HomepageView: View {
                     .overlay(
                         Image("shower")
                             .resizable()
-                            .frame(width: 262 , height: 120)
+                            .frame(width: 270 , height: 125)
                             .aspectRatio(contentMode: .fit)
                     )
                     .onTapGesture {
@@ -35,16 +35,20 @@ struct HomepageView: View {
                         Image("bedroom")
                             .resizable()
                             .frame(width: 183 , height: 90)
-                            .aspectRatio(contentMode: .fit)
-                    )
+                            .aspectRatio(contentMode: .fit))
                     .onTapGesture {
                         // Handle tap gesture for the second rectangle
                     }
                 
                 Rectangle()
                     .fill(Color.orange)
-                    .frame(width: 250, height: 150)
+                    .frame(width: 270, height: 125)
                     .padding()
+                    .overlay(
+                        Image("kitchen")
+                            .resizable()
+                            .frame(width: 111 , height: 111)
+                            .aspectRatio(contentMode: .fit))
                     .onTapGesture {
                         // Handle tap gesture for the third rectangle
                     }
