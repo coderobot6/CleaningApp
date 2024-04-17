@@ -3,7 +3,7 @@ import SwiftUI
 struct AddTaskButton: View {
     @State private var isPresented: Bool = false
     @State private var taskName: String = ""
-
+    @Binding var tasks: [String]
     var date: String
     var dateColor: String
     var buttonBackgroundColor: String
@@ -27,14 +27,15 @@ struct AddTaskButton: View {
     }
 
     func submit() {
-        print("Task name: \(taskName)")
+        tasks.append(taskName)
     }
 }
 
 struct ScheduleTaskView: View {
+    @Binding var tasks: [String]
     var body: some View {
         VStack {
-            AddTaskButton(date: "Sunday", dateColor: "CD5252", buttonBackgroundColor: "D08C7D", fontColor: "F1DAD4").padding()
+            AddTaskButton(tasks: $tasks, date: "Sunday", dateColor: "CD5252", buttonBackgroundColor: "D08C7D", fontColor: "F1DAD4").padding()
             HStack {
                 Text("Monday")
                 Button("Add Task") {
@@ -77,8 +78,4 @@ extension Color {
             opacity: Double(a) / 255
         )
     }
-}
-
-#Preview {
-    ScheduleTaskView()
 }

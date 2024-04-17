@@ -35,7 +35,7 @@ struct TaskView: View {
             Button("Schedule Task") {
                 self.displayTask.toggle()
             }.sheet(isPresented: $displayTask) {
-                ScheduleTaskView()
+                ScheduleTaskView(tasks: $tasks)
             }
         }
     }
