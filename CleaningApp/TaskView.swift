@@ -10,12 +10,15 @@ import SwiftUI
 struct TaskView: View {
     @State private var tasks = ["Task 1", "Task 2", "Task 3"]
     @State private var completedTasks = Set<String>()
+    @State private var displayTask: Bool = false
 
     var body: some View {
         VStack {
-            Text("Your tasks")
+            HStack {
+            Text("Your schedule")
                 .font(.title)
                 .padding()
+            }
 
             List {
                 ForEach(tasks, id: \.self) { task in
@@ -35,6 +38,11 @@ struct TaskView: View {
                         }
                     }
                 }
+            }
+            Button("Schedule Task") {
+                self.displayTask.toggle()
+            }.sheet(isPresented: $displayTask) {
+                ScheduleTaskView()
             }
         }
     }
