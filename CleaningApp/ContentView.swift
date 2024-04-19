@@ -35,7 +35,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            TaskView()
+            //TaskView()
+            TaskPageView()
                 .tabItem {
                     Label("Task", systemImage: "checkmark.circle")
                 }
