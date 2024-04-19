@@ -36,18 +36,6 @@ struct ScheduleTaskView: View {
     var body: some View {
         VStack {
             AddTaskButton(tasks: $tasks, date: "Sunday", dateColor: "CD5252", buttonBackgroundColor: "D08C7D", fontColor: "F1DAD4").padding()
-            HStack {
-                Text("Monday")
-                Button("Add Task") {
-                    // Add task
-                }
-            }
-            HStack {
-                Text("Tuesday")
-                Button("Add Task") {
-                    // Add task
-                }
-            }
         }
         .font(.title)
         .bold()

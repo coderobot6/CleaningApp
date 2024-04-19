@@ -2,7 +2,8 @@ import SwiftUI
 
 struct ScheduleView: View {
     var body: some View {
-        Text("This is the Schedule page")
+        Text("Overview Page")
+        
     }
 }
 
