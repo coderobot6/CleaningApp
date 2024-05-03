@@ -1,18 +1,24 @@
 import SwiftUI
 
 struct HomepageView: View {
-    @State private var isRectangle1Clicked: Bool = false
+    //@State private var isRectangle1Clicked: Bool = false
     
     var body: some View {
+        NavigationView{
         VStack {
             Text("Where to clean")
-                .font(.title)
+                .font(.system(size: 40))
                 .padding()
+                .fontWeight(.heavy)
+                .foregroundColor(Color(hex: "CD6A52")) 
+
             
             VStack {
+                NavigationLink(destination: InstructionView()) {
+                
                 Rectangle()
-                    .fill(Color.blue)
-                    .border(isRectangle1Clicked ? Color.gray : Color.clear, width: 2)
+                    .fill(Color(hex: "A0C397"))
+                    //.border(isRectangle1Clicked ? Color.gray : Color.clear, width: 2)
                     .frame(width: 270, height: 125)
                     .cornerRadius(20)
                     .padding()
@@ -22,14 +28,12 @@ struct HomepageView: View {
                             .frame(width: 270 , height: 125)
                             .aspectRatio(contentMode: .fit)
                     )
-                    .onTapGesture {
-                        isRectangle1Clicked.toggle()
-                        // Handle tap gesture for the first rectangle
-                    }
-                
+                    
+            }
                 Rectangle()
-                    .fill(Color.green)
+                    .fill(Color(hex: "A0C397"))
                     .frame(width: 270, height: 125)
+                    .cornerRadius(20)
                     .padding()
                     .overlay(
                         Image("bedroom")
@@ -41,8 +45,9 @@ struct HomepageView: View {
                     }
                 
                 Rectangle()
-                    .fill(Color.orange)
+                    .fill(Color(hex: "A0C397"))
                     .frame(width: 270, height: 125)
+                    .cornerRadius(20)
                     .padding()
                     .overlay(
                         Image("kitchen")
@@ -53,6 +58,10 @@ struct HomepageView: View {
                         // Handle tap gesture for the third rectangle
                     }
             }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(hex: "B1CEAA"))
+        .edgesIgnoringSafeArea(.all)
         }
     }
 }

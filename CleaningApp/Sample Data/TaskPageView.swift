@@ -35,7 +35,7 @@ struct TaskPageView: View {
                     .font(.title3).fontWeight(.bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
-                    .foregroundStyle(.blue)
+                    .foregroundColor(Color(hex: "528ACD"))
                 
                 Spacer()
                 TaskListView(yearPlan: currentPlan, isInEditMode: isInEditMode)
@@ -44,8 +44,8 @@ struct TaskPageView: View {
                 
                 
             }
-            .navigationTitle(Text(Date.now, format: .dateTime.day().month().year())
-                .foregroundStyle(dbScheduleManager.themeColor))
+            .navigationTitle(Text(Date.now, format: .dateTime.day().month().year()))
+                 .foregroundColor(Color(hex: "FFFDFD"))
             
             //If wanting to incorporate a toolbar
             /*.toolbar {
@@ -82,7 +82,7 @@ struct TaskPageView: View {
                 }
             }*/
             .tint(dbScheduleManager.themeColor)
-            .background(Color.green.opacity(0.3).edgesIgnoringSafeArea(.all))
+            .background(Color(hex: "B1CEAA").edgesIgnoringSafeArea(.all))
             
             
         }

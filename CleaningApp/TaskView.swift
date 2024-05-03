@@ -1,9 +1,18 @@
 import SwiftUI
 
 struct TaskView: View {
-    @State private var tasks = ["Task 1", "Task 2", "Task 3"]
+    @State private var tasks: [String] {
+        didSet {
+            UserDefaults.standard.set(tasks, forKey: "tasks")
+        }
+    }
     @State private var completedTasks = Set<String>()
     @State private var displayTask: Bool = false
+
+    init() {
+        let tasks = UserDefaults.standard.stringArray(forKey: "tasks") ?? ["Task 1", "Task 2", "Task 3"]
+        _tasks = State(initialValue: tasks)
+    }
 
     var body: some View {
         VStack {

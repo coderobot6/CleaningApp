@@ -56,6 +56,7 @@ struct SemesterDisclosureGroup: View {
                 Text("Today's Tasks")
                     .font(.system(size: 30))
                     .fontWeight(.heavy)
+                    .foregroundColor(Color(hex: "CD6A52"))
                     .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 0))
             }
             
@@ -67,17 +68,17 @@ struct SemesterDisclosureGroup: View {
             Text("Today's Progress")
                 .font(.system(size: 30))
                 .fontWeight(.heavy)
-                .foregroundStyle(cpm.themeColor)
+                .foregroundColor(Color(hex: "CD6A52"))
             ZStack (alignment: .leading) {
                 
                 RoundedRectangle(cornerRadius: 10.0)
                     .strokeBorder()
                     .frame(width: 300, height: 25)
-                    .foregroundColor(.orange)
+                    .foregroundColor(Color(hex: "CD6A52"))
                 RoundedRectangle(cornerRadius: 10.0)
                     .frame(width: (CGFloat(select)/3) * 300, height: 25, alignment: .leading)
                     .animation(.default, value: tog)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color(hex: "528ACD"))
             }
         }
 
@@ -88,7 +89,7 @@ struct SemesterDisclosureGroup: View {
             Text("Streak 🎉")
                 .font(.system(size: 30))
                 .fontWeight(.heavy)
-                .foregroundStyle(cpm.themeColor)
+                .foregroundColor(Color(hex: "CD6A52"))
                 .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0))
             HStack() {
                 VStack{
@@ -110,7 +111,7 @@ struct SemesterDisclosureGroup: View {
                 }
                 .font(.system(size: 40))
                 .fontWeight(.heavy)
-                .foregroundStyle(cpm.themeColor)
+                .foregroundColor(Color(hex: "CD6A52"))
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 40))
             }
         }
@@ -172,7 +173,7 @@ struct ClassRowView: View {
                 Text(CTask.domain)
                     .font(.title3).fontWeight(.bold)
                 //TODO: - THEME COLOR SHOULD BE HERE
-                    .foregroundStyle(cpm.themeColor)
+                    .foregroundColor(Color(hex: "E59E13"))
             }
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
             Spacer()

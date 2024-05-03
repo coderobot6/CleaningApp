@@ -24,6 +24,7 @@ struct AddTaskButton: View {
                 Button("Add", action: submit)
             }
         }
+        
     }
 
     func submit() {
