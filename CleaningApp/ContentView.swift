@@ -40,7 +40,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Task", systemImage: "checkmark.circle")
                 }
-            ScheduleView()
+            TaskView()
                 .tabItem {
                     Label("Schedule", systemImage: "calendar")
                 }
